@@ -1,0 +1,46 @@
+@mixin header-nav-text {
+  font-family: $open-sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: $black;
+}
+
+@mixin page-title {
+  font-family: $playfair-display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 57px;
+  line-height: 83px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $black;
+}
+
+@mixin subtitle {
+  font-family: $playfair-display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 37px;
+  letter-spacing: 0.05em;
+  color: $black;
+}
+
+@mixin new-price {
+  font-family: $open-sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 38px;
+  color: $black;
+}
+
+@mixin reset-default-button-style {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
