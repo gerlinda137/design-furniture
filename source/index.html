@@ -11,7 +11,9 @@
 
 <body>
   <header class="main-header">
-    <img src="img/logo.svg" alt="Логотип дизайнерской мебели" class="main-header__logo">
+    <a href="" class="main-header__logo-link">
+      <img src="img/logo.svg" alt="Логотип дизайнерской мебели" class="main-header__logo">
+    </a>
     <nav class="main-nav">
       <ul class="main-nav__list">
         <li class="main-nav__list-item"><a class="main-nav__list-item-link" href="#">мебель</a></li>
@@ -106,31 +108,31 @@
     </div>
     <section class="new-items">
       <div class="new-items__container">
-        <h2 class="new-items__title">Новинки</h2>
+        <h2 class="new-items__title section-title">Новинки</h2>
         <div class="new-items__card">
           <img src="img/twilight-chair.png" alt="Стул Смеркается" class="new-items__card-image" width="175"
             height="169">
           <h3 class="new-items__card-title">Стул "Смеркается"</h3>
-          <span class="new-items__card-price">$280</span>
+          <span class="new-items__card-price price">$280</span>
         </div>
         <div class="new-items__card">
           <img src="img/chandelier-cloud.png" alt="Люстра Облако" class="new-items__card-image" width="202"
             height="226">
           <h3 class="new-items__card-title">Люстра "Облако"</h3>
-          <span class="new-items__card-price">$250</span>
+          <span class="new-items__card-price price">$250</span>
         </div>
         <div class="new-items__card">
           <img src="img/table-crème-brûlée.png" alt="Стол Крем брюле" class="new-items__card-image" width="270"
             height="198">
           <h3 class="new-items__card-title">Стол "Крем брюле"</h3>
-          <span class="new-items__card-price">$320</span>
+          <span class="new-items__card-price price">$320</span>
         </div>
       </div>
       <div class="new-items__card">
         <img src="img/chair-white-chocolate.png" alt="Стул офисный Белый шоколад" class="new-items__card-image"
           width="490" height="466">
         <h3 class="new-items__card-title">Стул офисный "Белый шоколад"</h3>
-        <span class="new-items__card-price">$120</span>
+        <span class="new-items__card-price price">$120</span>
       </div>
     </section>
     <section class="comments">
@@ -196,6 +198,62 @@
           </li>
         </ul>
       </div>
+    </section>
+    <section class="sale">
+      <h2 class="sale__title section-title">Последний шанс</h2>
+      <ul class="categories">
+        <li class="categories__item"><a href="#" class="categories__item-link categories__item-link--active">Стулья</a>
+        </li>
+        <li class="categories__item"><a href="#" class="categories__item-link">Диваны</a></li>
+        <li class="categories__item"><a href="#" class="categories__item-link">Кресла</a></li>
+      </ul>
+      <ul class="sale-chairs">
+        <li class="sale-chairs__item">
+          <div class="sale-card">
+            <h3 class="sale-card__title">Стул «Карамель»</h3>
+            <span class="new-price price">$195</span>
+            <span class="old-price">$245</span>
+            <img src="img/chair-caramel.png" alt="Стул «Карамель»" class="sale-card__image">
+            <button class="sale-card__buy-button">Купить</button>
+          </div>
+        </li>
+        <li class="sale-chairs__item">
+          <div class="sale-card">
+            <h3 class="sale-card__title">Стул «Облако»</h3>
+            <span class="new-price price">$200</span>
+            <span class="old-price">$250</span>
+            <img src="img/chair-cloud.png" alt="Стул «Облако»" class="sale-card__image">
+            <button class="sale-card__buy-button">Купить</button>
+          </div>
+        </li>
+        <li class="sale-chairs__item">
+          <div class="sale-card">
+            <h3 class="sale-card__title">Стул «Сова»</h3>
+            <span class="new-price price">$240</span>
+            <span class="old-price">$260</span>
+            <img src="img/chair-owl.png" alt="Стул «Сова»" class="sale-card__image">
+            <button class="sale-card__buy-button">Купить</button>
+          </div>
+        </li>
+        <li class="sale-chairs__item">
+          <div class="sale-card">
+            <h3 class="sale-card__title">Стул «Мая»</h3>
+            <span class="new-price price">$280</span>
+            <span class="old-price">$330</span>
+            <img src="img/chair-maya.png" alt="Стул «Мая»" class="sale-card__image">
+            <button class="sale-card__buy-button">Купить</button>
+          </div>
+        </li>
+        <li class="sale-chairs__item">
+          <div class="sale-card">
+            <h3 class="sale-card__title">Стул «Месси»</h3>
+            <span class="new-price price">$280</span>
+            <span class="old-price">$305</span>
+            <img src="img/chair-Messi.png" alt="Стул «Месси»" class="sale-card__image">
+            <button class="sale-card__buy-button">Купить</button>
+          </div>
+        </li>
+      </ul>
     </section>
   </main>
 </body>
