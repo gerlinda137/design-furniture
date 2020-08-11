@@ -1,0 +1,12 @@
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: $mint;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 90px;
+  }
+}

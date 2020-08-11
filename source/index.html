@@ -10,40 +10,45 @@
 </head>
 
 <body>
-  <header class="main-header">
-    <a href="" class="main-header__logo-link">
-      <img src="img/logo.svg" alt="Логотип дизайнерской мебели" class="main-header__logo">
-    </a>
-    <nav class="main-nav">
-      <ul class="main-nav__list">
-        <li class="main-nav__list-item"><a class="main-nav__list-item-link" href="#">мебель</a></li>
-        <li class="main-nav__list-item"><a class="main-nav__list-item-link" href="#">освещение</a></li>
-        <li class="main-nav__list-item"><a class="main-nav__list-item-link" href="#">текстиль</a></li>
+  <header class="main-header inner-container">
+    <div class="main-header__container">
+      <div class="logo-and-main-nav-wrapper">
+        <a href="#" class="main-header__logo-link">
+          <img src="img/logo.svg" alt="Логотип дизайнерской мебели" class="main-header__logo">
+        </a>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__list-item"><a class="main-nav__list-item-link" href="#">мебель</a></li>
+            <li class="main-nav__list-item"><a class="main-nav__list-item-link" href="#">освещение</a></li>
+            <li class="main-nav__list-item"><a class="main-nav__list-item-link" href="#">текстиль</a></li>
+          </ul>
+        </nav>
+      </div>
+      <ul class="purchase-options">
+        <li class="purchase-options__item">
+          <button type="button" class="purchase-options__button" aria-label="поиск">
+            <svg width="24" height="27" viewbox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M23.7131 24.8236L18.017 19.029C19.8744 17.0765 21.0508 14.4312 21.0508 11.4709C21.0508 5.55037 16.3453 0.76355 10.5254 0.76355C4.70548 0.76355 0 5.55037 0 11.4709C0 17.3915 4.70548 22.1783 10.5254 22.1783C12.7543 22.1783 14.8594 21.4225 16.593 20.2257L22.4129 26.1463C22.5987 26.3352 22.8463 26.3982 23.094 26.3982C23.3416 26.3982 23.5893 26.3352 23.775 26.1463C24.0846 25.7684 24.0846 25.2015 23.7131 24.8236ZM1.85742 11.4709C1.85742 6.62111 5.75802 2.65308 10.5254 2.65308C15.2928 2.65308 19.1934 6.62111 19.1934 11.4709C19.1934 16.3207 15.2928 20.2887 10.5254 20.2887C5.75802 20.2887 1.85742 16.3207 1.85742 11.4709Z"
+                fill="#313133" />
+            </svg>
+          </button></li>
+        <li class="purchase-options__item">
+          <button type="button" class="purchase-options__button purchase-options__button--basket"
+            aria-label="добавить в корзину">
+            <svg width="33" height="28" viewbox="0 0 33 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M1.70156 8.98752C1.70821 8.85446 1.81803 8.75 1.95125 8.75H21.0487C21.182 8.75 21.2918 8.85446 21.2984 8.98751L22.1984 26.9875C22.2056 27.1303 22.0917 27.25 21.9488 27.25H1.05125C0.908275 27.25 0.794421 27.1303 0.801561 26.9875L1.70156 8.98752Z"
+                stroke="#313133" stroke-width="1.5" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M16.4664 12C16.4894 11.5233 16.5 11.023 16.5 10.5C16.5 7.91305 16.2196 5.8705 15.4677 4.50676C15.1108 3.85955 14.6568 3.38328 14.071 3.05707C13.4773 2.72643 12.6577 2.5 11.5 2.5C10.3423 2.5 9.52274 2.72643 8.92899 3.05707C8.34317 3.38328 7.88917 3.85955 7.53231 4.50676C6.78036 5.8705 6.5 7.91305 6.5 10.5C6.5 11.0225 6.50018 11.522 6.50614 12H5.00598C5 11.5114 5 11.0104 5 10.5C5 5.25329 6.08333 1 11.5 1C16.9167 1 18 5.25329 18 10.5C18 11.0104 17.9905 11.5114 17.9684 12H16.4664Z"
+                fill="#313133" />
+            </svg>
+          </button></li>
       </ul>
-    </nav>
-    <ul class="purchase-options">
-      <li class="purchase-options__item">
-        <button type="button" class="purchase-options__button" aria-label="поиск">
-          <svg width="24" height="27" viewbox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M23.7131 24.8236L18.017 19.029C19.8744 17.0765 21.0508 14.4312 21.0508 11.4709C21.0508 5.55037 16.3453 0.76355 10.5254 0.76355C4.70548 0.76355 0 5.55037 0 11.4709C0 17.3915 4.70548 22.1783 10.5254 22.1783C12.7543 22.1783 14.8594 21.4225 16.593 20.2257L22.4129 26.1463C22.5987 26.3352 22.8463 26.3982 23.094 26.3982C23.3416 26.3982 23.5893 26.3352 23.775 26.1463C24.0846 25.7684 24.0846 25.2015 23.7131 24.8236ZM1.85742 11.4709C1.85742 6.62111 5.75802 2.65308 10.5254 2.65308C15.2928 2.65308 19.1934 6.62111 19.1934 11.4709C19.1934 16.3207 15.2928 20.2887 10.5254 20.2887C5.75802 20.2887 1.85742 16.3207 1.85742 11.4709Z"
-              fill="#313133" />
-          </svg>
-        </button></li>
-      <li class="purchase-options__item">
-        <button type="button" class="purchase-options__button" aria-label="добавить в корзину">
-          <svg width="33" height="28" viewbox="0 0 33 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M1.70156 8.98752C1.70821 8.85446 1.81803 8.75 1.95125 8.75h31.0487C21.182 8.75 21.2918 8.85446 21.2984 8.98751L22.1984 26.9875C22.2056 27.1303 22.0917 27.25 21.9488 27.25H1.05125C0.908275 27.25 0.794421 27.1303 0.801561 26.9875L1.70156 8.98752Z"
-              stroke="#313133" stroke-width="1.5" />
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M16.4664 12C16.4894 11.5233 16.5 11.023 16.5 10.5C16.5 7.91305 16.2196 5.8705 15.4677 4.50676C15.1108 3.85955 14.6568 3.38328 14.071 3.05707C13.4773 2.72643 12.6577 2.5 11.5 2.5C10.3423 2.5 9.52274 2.72643 8.92899 3.05707C8.34317 3.38328 7.88917 3.85955 7.53231 4.50676C6.78036 5.8705 6.5 7.91305 6.5 10.5C6.5 11.0225 6.50018 11.522 6.50614 12H5.00598C5 11.5114 5 11.0104 5 10.5C5 5.25329 6.08333 1 11.5 1C16.9167 1 18 5.25329 18 10.5C18 11.0104 17.9905 11.5114 17.9684 12H16.4664Z"
-              fill="#313133" />
-          </svg>
-        </button></li>
-    </ul>
+    </div>
   </header>
-  <main class="page-main">
+  <main class="page-main inner-container">
     <div class="banner">
       <div class="banner__toggle">
         <ul class="toggle-list">
@@ -256,7 +261,7 @@
       </ul>
     </section>
   </main>
-  <footer class="main-footer">
+  <footer class="main-footer inner-container">
     <div class="main-footer__container">
       <img src="img/logo.svg" alt="Дизайнерская мебель логотип" class="main-footer__logo">
       <nav class="footer-nav">

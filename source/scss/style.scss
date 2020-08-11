@@ -4,3 +4,9 @@
 @import "includes/fonts";
 @import "includes/globals";
 @import "../../node_modules/normalize.css/normalize.css";
+
+/*Блоки*/
+@import "blocks/main-header";
+@import "blocks/logo-and-main-nav-wrapper";
+@import "blocks/main-nav";
+@import "blocks/purchase-options";

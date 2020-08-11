@@ -1,0 +1,19 @@
+.main-nav {
+  display: flex;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    width: 380px;
+
+  }
+
+  &__list-item-link {
+    text-decoration: none;
+    @include header-nav-text;
+  }
+}

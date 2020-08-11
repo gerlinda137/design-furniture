@@ -1,0 +1,36 @@
+.purchase-options {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  margin-top: -6px;
+  width: 80px;
+  justify-content: space-between;
+
+  &__button {
+    @include reset-default-button-style;
+    padding: 0;
+    position: relative
+  }
+
+  &__button--basket::after {
+    content: "3";
+    font-family: $avenir-next;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: $white;
+    width: 18px;
+    height: 18px;
+    background-color: $ash;
+    position: absolute;
+    top: 0px;
+    left: 15px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
