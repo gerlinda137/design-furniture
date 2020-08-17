@@ -6,7 +6,12 @@
 @import "../../node_modules/normalize.css/normalize.css";
 
 /*Блоки*/
+//Хедер
 @import "blocks/main-header";
 @import "blocks/logo-and-main-nav-wrapper";
 @import "blocks/main-nav";
 @import "blocks/purchase-options";
+
+//главная
+@import "blocks/page-main";
+@import "blocks/banner";

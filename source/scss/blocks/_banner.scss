@@ -1,0 +1,13 @@
+.banner {
+  display: flex;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__card-title {
+    @include page-title;
+    max-width: 545px;
+  }
+}
