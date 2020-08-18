@@ -32,6 +32,16 @@
   margin: 0;
 }
 
+@mixin product-name {
+  font-family: $open-sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 27px;
+  color: $black;
+  margin: 0;
+}
+
 @mixin new-price {
   font-family: $open-sans;
   font-style: normal;
@@ -39,6 +49,18 @@
   font-size: 28px;
   line-height: 38px;
   color: $black;
+}
+
+@mixin buy-button {
+  font-family: $open-sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: $white;
+  background-color: $black;
 }
 
 @mixin reset-default-button-style {

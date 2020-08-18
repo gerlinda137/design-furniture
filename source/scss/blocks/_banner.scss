@@ -6,8 +6,52 @@
     flex-direction: column;
   }
 
+  &__card {
+    display: flex;
+  }
+
+  &__card-info {
+    display: flex;
+    flex-direction: column;
+  }
+
   &__card-title {
     @include page-title;
     max-width: 545px;
+    margin-bottom: 26px;
   }
+
+  &__prices {
+    display: flex;
+    margin: 0;
+    margin-bottom: 35px;
+
+    .prices__item {
+      font-family: $open-sans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 27px;
+      color: $black;
+      margin-right: 22px;
+
+      &--new {
+        font-family: $open-sans;
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 41px;
+        margin-top: -10px;
+      }
+    }
+  }
+
+  &__card-img-container {
+    display: flex;
+    margin-top: -230px;
+    margin-left: 1.5%;
+  }
+}
+
+h3.banner__product-name {
+  margin-bottom: 21px;
 }
