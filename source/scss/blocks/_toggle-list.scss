@@ -17,6 +17,20 @@
 
     &--active {
       @include toggle-number-active;
+      width: 54px;
+      height: 58px;
+      position: relative;
+
+      &::after {
+        content: "";
+        width: 2px;
+        height: 54px;
+        background-color: $black;
+        position: absolute;
+        top: 7px;
+        right: -13px;
+      }
+
     }
   }
 }
