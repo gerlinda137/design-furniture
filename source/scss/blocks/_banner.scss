@@ -1,7 +1,7 @@
 .banner {
   display: flex;
   width: 1118px;
-  // position: relative;
+  position: relative;
 
   &__wrapper {
     display: flex;
@@ -64,6 +64,8 @@
   &__toggle {
     display: flex;
     position: absolute;
+    top: 194px;
+    right: -3.5%;
   }
 }
 
@@ -71,13 +73,13 @@ h3.banner__product-name {
   margin-bottom: 21px;
 }
 
-.banner::after {
-  content: "";
-  display: flex;
-  width: 36.4%;
-  height: 116.5%;
-  z-index: -1;
-  position: absolute;
-  right: 0;
-  background-color: $strawberry;
-}
+// .banner::after {
+//   content: "";
+//   display: flex;
+//   width: 36.4%;
+//   height: 116.5%;
+//   z-index: -1;
+//   position: absolute;
+//   right: 0;
+//   background-color: $strawberry;
+// }

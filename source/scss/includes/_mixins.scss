@@ -63,6 +63,29 @@
   background-color: $black;
 }
 
+@mixin toggle-number-inactive {
+  font-family: $playfair-display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 145%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+@mixin toggle-number-active {
+  font-family: $playfair-display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 145%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: #000000;
+}
+
 @mixin reset-default-button-style {
   border: none;
   background-color: transparent;

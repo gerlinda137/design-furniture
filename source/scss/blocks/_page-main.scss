@@ -2,4 +2,15 @@
   display: flex;
   flex-direction: column;
   overflow: hidden;
+
+  &::after {
+    content: "";
+    display: flex;
+    width: 36.4%;
+    height: 116.5%;
+    z-index: -1;
+    position: absolute;
+    right: 0;
+    background-color: $strawberry;
+  }
 }
