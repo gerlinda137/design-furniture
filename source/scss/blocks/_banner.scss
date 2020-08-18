@@ -1,5 +1,7 @@
 .banner {
   display: flex;
+  width: 1118px;
+  // position: relative;
 
   &__wrapper {
     display: flex;
@@ -8,11 +10,13 @@
 
   &__card {
     display: flex;
+    justify-content: space-between;
   }
 
   &__card-info {
     display: flex;
     flex-direction: column;
+    margin-top: 114px;
   }
 
   &__card-title {
@@ -47,11 +51,33 @@
 
   &__card-img-container {
     display: flex;
-    margin-top: -230px;
-    margin-left: 1.5%;
+    margin-top: -117px;
+    margin-right: 28.5%;
+    width: 532px;
+    height: 751px;
+
+    img {
+      height: auto;
+    }
+  }
+
+  &__toggle {
+    display: flex;
+    position: absolute;
   }
 }
 
 h3.banner__product-name {
   margin-bottom: 21px;
+}
+
+.banner::after {
+  content: "";
+  display: flex;
+  width: 36.4%;
+  height: 116.5%;
+  z-index: -1;
+  position: absolute;
+  right: 0;
+  background-color: $strawberry;
 }

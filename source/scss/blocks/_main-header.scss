@@ -2,7 +2,6 @@
   display: flex;
   justify-content: space-between;
   overflow: hidden;
-  margin-bottom: 114px;
 
   &__container {
     display: flex;
@@ -17,7 +16,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    left: 63.6%;
+    left: 66%;
     top: 0px;
     background: $strawberry;
     z-index: -1;
