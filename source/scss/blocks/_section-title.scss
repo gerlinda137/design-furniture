@@ -1,0 +1,13 @@
+.section-title {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 4px;
+    background-color: $black;
+    left: 0;
+    top: 51px;
+  }
+}
