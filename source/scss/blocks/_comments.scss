@@ -1,0 +1,69 @@
+.comments {
+  display: flex;
+  flex-direction: column;
+  width: 70.3%;
+  padding: 0 20px;
+  margin: 0 auto;
+  position: relative;
+
+  &__buttons-container {
+    display: flex;
+    width: 95.5%;
+    justify-content: space-between;
+    position: absolute;
+    top: 105px;
+  }
+
+  &__button {
+    @include reset-default-button-style;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: $white;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    &--hidden {
+      display: none;
+    }
+  }
+
+  &__card-avatar {
+    margin-bottom: 23px;
+  }
+
+  &__card-name {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+    color: $black;
+    margin-bottom: 2px;
+  }
+
+  &__card-occupation {
+    margin-bottom: 5px;
+  }
+
+  &__card-message {
+    font-family: $open-sans;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    color: #444348;
+    padding: 0 50px;
+    margin-bottom: 7px;
+  }
+
+  &__pagination {
+    display: flex;
+  }
+}

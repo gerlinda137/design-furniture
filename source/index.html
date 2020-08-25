@@ -186,14 +186,15 @@
       </div>
     </section>
     <section class="comments">
+      <h2 class="comments__title visually-hidden">Отзывы</h2>
       <div class="comments__buttons-container">
-        <button class="comments__button comments__button--left">
+        <button aria-label="предыдущий отзыв" class="comments__button comments__button--left">
           <svg width="15" height="9" viewbox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M1.60999 4.41936L5.59251 8.54691M1.60999 4.41936L5.65506 0.514452M1.60999 4.41936L14.7431 4.65262"
               stroke="#BDBDBD" />
           </svg>
         </button>
-        <button class="comments__button comments__button--right">
+        <button aria-label="следующий отзыв" class="comments__button comments__button--right">
           <svg width="15" height="9" viewbox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M13.381 4.41936L9.39846 8.54691M13.381 4.41936L9.33592 0.514452M13.381 4.41936L0.247869 4.65262"
               stroke="#BDBDBD" />
@@ -201,41 +202,46 @@
         </button>
       </div>
       <div class="comments__card comments__card--first">
-        <img src="img/comment-avatar.png" alt="Аватар" class="comments__card-avatar">
-        <h3 class="comments__card-name">Елена Новикова</h3>
+        <img src="img/comment-avatar.png" alt="Аватар" class="comments__card-avatar" width="80" height="80">
+        <cite class="comments__card-name">Елена Новикова</cite>
         <span class="comments__card-occupation">студентка</span>
-        <p class="comments__card-message">«Хочу поделиться своими впечатлениями по использованию дивана «Бродвей»,
+        <blockquote class="comments__card-message">«Хочу поделиться своими впечатлениями по использованию дивана
+          «Бродвей»,
           заказывала в конце 2016 года. Держится великолепно. Спасибо, большое сотрудникам этого чудесного магазина.»
-        </p>
+        </blockquote>
       </div>
-      <div class="comments__card comments__card--second">
+      <div class="comments__card comments__card--second comments__card--hidden">
         <img src="img/comment-avatar.png" alt="Аватар" class="comments__card-avatar">
-        <h3 class="comments__card-name">Елена Новикова</h3>
+        <cite class="comments__card-name">Елена Новикова</cite>
         <span class="comments__card-occupation">студентка</span>
-        <p class="comments__card-message">«Хочу поделиться своими впечатлениями по использованию дивана «Бродвей»,
+        <blockquote class="comments__card-message">«Хочу поделиться своими впечатлениями по использованию дивана
+          «Бродвей»,
           заказывала в конце 2016 года. Держится великолепно. Спасибо, большое сотрудникам этого чудесного магазина.»
-        </p>
+        </blockquote>
       </div>
-      <div class="comments__card comments__card--third">
+      <div class="comments__card comments__card--third comments__card--hidden">
         <img src="img/comment-avatar.png" alt="Аватар" class="comments__card-avatar">
-        <h3 class="comments__card-name">Елена Новикова</h3>
+        <cite class="comments__card-name">Елена Новикова</cite>
         <span class="comments__card-occupation">студентка</span>
-        <p class="comments__card-message">«Хочу поделиться своими впечатлениями по использованию дивана «Бродвей»,
+        <blockquote class="comments__card-message">«Хочу поделиться своими впечатлениями по использованию дивана
+          «Бродвей»,
           заказывала в конце 2016 года. Держится великолепно. Спасибо, большое сотрудникам этого чудесного магазина.»
-        </p>
+        </blockquote>
       </div>
-      <div class="comments__card comments__card--fourth">
+      <div class="comments__card comments__card--fourth comments__card--hidden">
         <img src="img/comment-avatar.png" alt="Аватар" class="comments__card-avatar">
-        <h3 class="comments__card-name">Елена Новикова</h3>
+        <cite class="comments__card-name">Елена Новикова</cite>
         <span class="comments__card-occupation">студентка</span>
-        <p class="comments__card-message">«Хочу поделиться своими впечатлениями по использованию дивана «Бродвей»,
+        <blockquote class="comments__card-message">«Хочу поделиться своими впечатлениями по использованию дивана
+          «Бродвей»,
           заказывала в конце 2016 года. Держится великолепно. Спасибо, большое сотрудникам этого чудесного магазина.»
-        </p>
+        </blockquote>
       </div>
       <div class="comments__pagination">
         <ul class="pagination-list">
           <li class="pagination-list__item">
-            <button class="pagination-list__item-button--active" aria-label="переключение слайда"></button>
+            <button class="pagination-list__item-button pagination-list__item-button--active"
+              aria-label="переключение слайда"></button>
           </li>
           <li class="pagination-list__item">
             <button class="pagination-list__item-button" aria-label="переключение слайда"></button>

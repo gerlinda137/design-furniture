@@ -1,0 +1,22 @@
+.pagination-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  width: 53px;
+
+  &__item-button {
+    @include reset-default-button-style;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: solid 1px $grey;
+    padding: 0;
+
+    &--active {
+      background-color: $grey;
+    }
+  }
+}
