@@ -1,7 +1,8 @@
-.banner {
+.slider {
   display: flex;
   width: 1118px;
   position: relative;
+  margin-bottom: 120px;
 
   &__wrapper {
     display: flex;
@@ -73,11 +74,11 @@
   }
 }
 
-h3.banner__product-name {
+h3.slider__product-name {
   margin-bottom: 21px;
 }
 
-// .banner::after {
+// .slider::after {
 //   content: "";
 //   display: flex;
 //   width: 36.4%;
