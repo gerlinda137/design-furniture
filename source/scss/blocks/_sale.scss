@@ -2,6 +2,7 @@
   display: flex;
   position: relative;
   width: 100%;
+  margin-bottom: 166px;
 
   &__container {
     display: flex;
@@ -27,7 +28,7 @@
   content: "";
   position: absolute;
   width: 56%;
-  height: 80%;
+  height: 80vh;
   background-color: $strawberry;
   left: 0;
   top: -14.5%;

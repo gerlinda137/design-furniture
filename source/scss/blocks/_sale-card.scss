@@ -3,6 +3,21 @@
   flex-direction: column;
   background-color: $white;
   min-width: 209px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
+  position: relative;
+
+  &::before {
+    visibility: hidden;
+    content: "";
+    width: 209px;
+    height: 5px;
+    background-color: $black;
+    position: absolute;
+  }
+
+  &__link {
+    text-decoration: none;
+  }
 
   &__info {
     display: flex;
@@ -51,4 +66,27 @@
   &__image-wrapper img {
     max-width: 100%;
   }
+
+  &__buy-button {
+    visibility: hidden;
+    @include reset-default-button-style;
+    @include buy-button;
+    padding: 18px 66px;
+
+    &:hover {
+      background-color: darken($black, 5%);
+    }
+
+    &:focus {
+      background-color: lighten($black, 5%);
+    }
+  }
+}
+
+.sale-card:hover::before {
+  visibility: visible;
+}
+
+.sale-card:hover .sale-card__buy-button {
+  visibility: visible;
 }
