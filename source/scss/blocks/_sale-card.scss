@@ -1,0 +1,39 @@
+.sale-card {
+  display: flex;
+  flex-direction: column;
+  background-color: $white;
+  width: 209px;
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    padding-left: 26px;
+    padding-top: 27px;
+  }
+
+  &__prices {
+    display: flex;
+    align-items: center;
+  }
+
+  &__product-name {
+    font-family: $open-sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #000000;
+  }
+
+  &__image-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    height: 255px;
+    overflow: hidden;
+  }
+
+  &__image-wrapper img {
+    max-width: 100%;
+  }
+}
