@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   background-color: $white;
-  width: 209px;
+  min-width: 209px;
 
   &__info {
     display: flex;
@@ -16,14 +16,29 @@
     align-items: center;
   }
 
+  &__new-price {
+    margin-right: 10px;
+  }
+
+  &__old-price {
+    font-family: $open-sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-decoration-line: line-through;
+
+    color: #979798;
+  }
+
   &__product-name {
     font-family: $open-sans;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 22px;
-
     color: #000000;
+    margin-bottom: 10px;
   }
 
   &__image-wrapper {
