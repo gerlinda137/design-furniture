@@ -1,0 +1,35 @@
+.main-footer {
+  display: flex;
+  flex-direction: column;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+
+    img {
+      padding-left: 15px;
+    }
+  }
+
+  &__copyright {
+    margin-top: -30px;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    font-family: $avenir-next;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 15px;
+    text-align: center;
+    color: #000000;
+
+    opacity: 0.2;
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
