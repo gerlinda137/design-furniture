@@ -1,8 +1,8 @@
 .slider {
   display: flex;
-  width: 1171px;
   position: relative;
   margin-bottom: 120px;
+  width: 100%;
 
   &__wrapper {
     display: flex;
@@ -11,7 +11,7 @@
 
   &__card {
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
 
     &--hidden {
       display: none;
@@ -26,7 +26,7 @@
 
   &__card-title {
     @include page-title;
-    max-width: 545px;
+    max-width: 515px;
     margin-bottom: 26px;
   }
 
@@ -55,22 +55,28 @@
   }
 
   &__card-img-container {
-    display: flex;
+    // display: flex;
+    // margin-top: -117px;
+    // margin-right: -2%;
+    // width: 532px;
+    // height: 751px;
     margin-top: -117px;
-    margin-right: -2%;
-    width: 532px;
+    margin-right: -2.5%;
+    width: 49.9%;
     height: 751px;
 
     img {
+      max-width: 100%;
       height: auto;
     }
   }
 
   &__toggle {
     display: flex;
-    position: absolute;
-    top: 194px;
-    right: 2.5%;
+    // position: absolute;
+    // top: 194px;
+    // right: 2.5%;
+    margin-top: 16.65%;
   }
 }
 
