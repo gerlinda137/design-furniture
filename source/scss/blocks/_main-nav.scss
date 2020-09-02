@@ -17,10 +17,40 @@
     text-decoration: none;
     @include header-nav-text;
   }
+
+  &__toggle-menu-button {
+    display: none;
+  }
 }
 
 @media (max-width: 830px) {
   .main-nav {
     margin-right: 30%;
   }
+}
+
+@media (max-width: 750px) {
+  .main-nav {
+    order: 1;
+    margin: 0;
+
+    &__toggle-menu-button {
+      display: block;
+      width: 25px;
+      @include reset-default-button-style;
+      padding: 0;
+
+      div {
+        height: 2px;
+        background: #000;
+        margin-bottom: 6px;
+        width: 100%;
+      }
+    }
+
+    &__list {
+      display: none;
+    }
+  }
+
 }

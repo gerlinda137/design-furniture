@@ -45,14 +45,8 @@
 }
 
 
-// .purchase-options::after {
-//   content: "";
-//   position: absolute;
-//   width: 100%;
-//   height: 751px;
-//   left: 66.6%;
-//   top: 0px;
-//   background: $strawberry;
-//   z-index: -1;
-
-// }
+@media (max-width: 750px) {
+  .purchase-options {
+    margin-left: 70%;
+  }
+}
