@@ -14,3 +14,10 @@
     background-color: $strawberry;
   }
 }
+
+@media (max-width: 750px) {
+  .page-main::after {
+    width: 50%;
+    height: 327px;
+  }
+}

@@ -105,3 +105,52 @@ h3.slider__product-name {
     }
   }
 }
+
+@media (max-width: 750px) {
+  .slider {
+    flex-direction: column;
+
+    &__card {
+      flex-direction: column;
+    }
+
+    &__card-info {
+      order: 1;
+      width: initial;
+      margin-top: 60px;
+    }
+
+    &__card-img-container {
+      order: 0;
+      width: 277px;
+      height: 327.1px;
+      margin: 0 auto;
+      margin-top: -32px;
+
+      img {
+        padding-left: 20px;
+      }
+    }
+
+    &__card-title {
+      font-size: 27px;
+      line-height: 170%;
+      letter-spacing: 0.05em;
+      margin-bottom: 22px;
+    }
+
+    &__prices {
+      margin-bottom: 30px;
+    }
+  }
+
+  h3.slider__product-name {
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 380px) {
+  .slide {
+    &__card-img-container {}
+  }
+}

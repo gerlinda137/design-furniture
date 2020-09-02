@@ -7,3 +7,11 @@
     width: 238px;
   }
 }
+
+@media (max-width: 750px) {
+  .buy-button {
+    &--slider {
+      width: 100%;
+    }
+  }
+}
