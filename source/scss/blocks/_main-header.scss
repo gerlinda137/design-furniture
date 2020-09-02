@@ -1,6 +1,5 @@
 .main-header {
   display: flex;
-  justify-content: space-between;
   overflow: hidden;
   position: relative;
 
@@ -23,15 +22,8 @@
     position: relative;
   }
 
-  // &__container::after {
-  //   content: "";
-  //   position: absolute;
-  //   width: 100%;
-  //   height: 100%;
-  //   left: 66%;
-  //   top: 0px;
-  //   background: $strawberry;
-  //   z-index: -1;
-
-  // }
+  &__logo-wrapper {
+    display: flex;
+    padding-right: 20px;
+  }
 }

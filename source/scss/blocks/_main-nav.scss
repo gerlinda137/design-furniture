@@ -1,5 +1,6 @@
 .main-nav {
   display: flex;
+  margin-right: 37%;
 
   &__list {
     display: flex;
@@ -15,5 +16,11 @@
   &__list-item-link {
     text-decoration: none;
     @include header-nav-text;
+  }
+}
+
+@media (max-width: 830px) {
+  .main-nav {
+    margin-right: 30%;
   }
 }
