@@ -22,6 +22,14 @@
     border-radius: 50%;
     background-color: $white;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+
+    &:hover {
+      background-color: $strawberry;
+    }
+
+    &:active {
+      background-color: darken($strawberry, 5%);
+    }
   }
 
   &__card {
@@ -66,5 +74,18 @@
 
   &__pagination {
     display: flex;
+  }
+}
+
+@media (max-width: 1225px) {
+  .comments {
+    width: 75%;
+  }
+}
+
+
+@media (max-width: 750px) {
+  .comments {
+    display: none;
   }
 }
