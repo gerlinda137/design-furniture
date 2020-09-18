@@ -4,11 +4,17 @@
   grid-template-areas:
     "title twilight chocolate chocolate"
     "cloud cream  chocolate chocolate";
+  grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 30px;
-  justify-content: space-between;
   justify-items: stretch;
+  grid-row-gap: 36px;
+  width: 100%;
 
-  &__title-wrapper {}
+  &__title-wrapper {
+    align-self: center;
+    margin-top: 50px;
+    grid-area: title;
+  }
 
   &__title {
     padding-bottom: 40px;
@@ -25,6 +31,17 @@
   }
 
   &__card {
+    display: grid;
+    background-color: $white;
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.03);
+
+    &:hover {
+      background-color: $strawberry;
+    }
+
+    &:active {
+      background-color: darken($strawberry, 5%);
+    }
 
     &--twilight {
       grid-area: twilight;
@@ -60,14 +77,51 @@
     overflow: hidden;
     height: 201px;
     width: 100%;
+    text-align: center;
 
     img {
-      width: 100%;
-      height: auto;
+      height: 100%;
+      width: auto;
     }
+  }
+
+  &__text-container {
+    text-align: center;
+    margin-bottom: 16px;
   }
 
   &__product-name {}
 
   &__card-price {}
+}
+
+@media (max-width: 1020px) {
+
+  .new-items {
+    grid-template-areas:
+      "title title"
+      "chocolate twilight"
+      "cloud cream";
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    max-width: 93%;
+
+    &__card {
+      &--chocolate {
+        .new-items__img-wrapper {
+          height: 199px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .new-items {
+    display: block;
+
+    &__card {
+      margin-bottom: 30px;
+    }
+  }
 }
