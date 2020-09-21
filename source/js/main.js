@@ -1,5 +1,5 @@
 const commentsSlider = document.querySelector('.swiper-container');
-const saleSlider = document.querySelector('.sale-chairs__swiper-container');
+const saleSlider = document.querySelector('.sale-chairs');
 
 
 let mySwiper = new Swiper(commentsSlider, {
@@ -62,7 +62,7 @@ function mobileSlider() {
       slideClass: 'sale-card',
 
     })
-    saleSlider.dataset.mobile == 'true';
+    saleSlider.dataset.mobile = 'true';
   }
 
   if (window.innerWidth > 750) {
@@ -76,6 +76,4 @@ function mobileSlider() {
 }
 
 mobileSlider();
-window.addEventListener('resize', () => {
-  mobileSlider();
-})
+window.addEventListener('resize', mobileSlider)

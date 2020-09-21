@@ -34,3 +34,10 @@
   top: -73px;
   z-index: -1;
 }
+
+
+@media (max-width: 750px) {
+  .sale::before {
+    counter-reset: none;
+  }
+}
