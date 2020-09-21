@@ -1,7 +1,6 @@
 .sale-chairs {
   display: flex;
   flex-wrap: wrap;
-  list-style: none;
   margin: 0;
   padding: 0;
   padding-left: 2px;
@@ -16,6 +15,25 @@
 
     &:last-child {
       margin-right: 0;
+    }
+  }
+
+  .swiper-container {
+    overflow: hidden;
+  }
+
+  .swiper-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 750px) {
+
+  .sale-chairs {
+    .swiper-wrapper {
+      display: flex;
+      flex-wrap: nowrap;
     }
   }
 }

@@ -92,3 +92,10 @@
 .sale-card:hover .sale-card__buy-button {
   display: block;
 }
+
+
+@media (max-width: 750px) {
+  .sale-card {
+    width: 474px;
+  }
+}
