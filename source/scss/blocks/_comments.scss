@@ -7,20 +7,48 @@
   position: relative;
   margin-bottom: 169px;
 
-  &__buttons-container {
-    display: flex;
-    width: 95.5%;
-    justify-content: space-between;
-    position: absolute;
-    top: 105px;
-  }
+  &__swiper-button-prev {
 
-  &__button {
-    @include reset-default-button-style;
+    &::after {
+      content: '';
+      width: 14px;
+      height: 9.3px;
+      background-image: url(../../img/left-arrow.svg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position-x: center;
+    }
+
     width: 36px;
     height: 36px;
-    border-radius: 50%;
     background-color: $white;
+    border-radius: 50%;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+
+    &:hover {
+      background-color: $strawberry;
+    }
+
+    &:active {
+      background-color: darken($strawberry, 5%);
+    }
+  }
+
+  &__swiper-button-next {
+    &::after {
+      content: '';
+      width: 14px;
+      height: 9.3px;
+      background-image: url(../../img/right-arrow.svg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position-x: center;
+    }
+
+    width: 36px;
+    height: 36px;
+    background-color: $white;
+    border-radius: 50%;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
 
     &:hover {
@@ -73,7 +101,30 @@
   }
 
   &__pagination {
-    display: flex;
+    width: 53px;
+
+    .swiper-pagination-bullet {
+      background-color: transparent;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      border: solid 1px $grey;
+      padding: 0;
+      margin: 0;
+      opacity: 1;
+    }
+
+    .swiper-pagination-bullet-active {
+      background-color: $grey;
+    }
+  }
+
+  &__swiper-wrapper {
+    padding-bottom: 22px;
+  }
+
+  .swiper-pagination-bullets {
+    bottom: -2px;
   }
 }
 
