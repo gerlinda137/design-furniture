@@ -5,7 +5,7 @@
   min-width: 209px;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 58px;
   align-self: flex-start;
   flex-shrink: 0;
 
@@ -75,6 +75,7 @@
     @include reset-default-button-style;
     @include buy-button;
     padding: 18px 66px;
+    position: absolute;
 
     &:hover {
       background-color: darken($black, 5%);
