@@ -46,9 +46,11 @@ function mobileSlider() {
       // direction: 'vertical',
 
       // If we need pagination
-      slidesPerView: 1,
-      centeredSlides: true,
       spaceBetween: 20,
+      slidesPerView: 1,
+      width: 400,
+      centeredSlides: true,
+
       pagination: {
         el: '.swiper-pagination',
       },

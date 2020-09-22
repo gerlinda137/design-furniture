@@ -32,9 +32,13 @@
 @media (max-width: 750px) {
 
   .sale-chairs {
+    max-width: 400px;
+    margin: 0 auto;
+
     .swiper-wrapper {
       display: flex;
       flex-wrap: nowrap;
+
     }
   }
 }

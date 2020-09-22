@@ -27,3 +27,14 @@
     }
   }
 }
+
+@media (max-width: 750px) {
+  .categories {
+    justify-content: space-between;
+
+    &__item:last-child {
+      margin-right: 0;
+    }
+  }
+
+}

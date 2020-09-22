@@ -7,6 +7,7 @@
   &__container {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
 
   &__title {
@@ -37,6 +38,17 @@
 
 
 @media (max-width: 750px) {
+  .sale {
+
+    &__title {
+      font-size: 20px;
+
+      &::before {
+        top: 40px;
+      }
+    }
+  }
+
   .sale::before {
     counter-reset: none;
   }
