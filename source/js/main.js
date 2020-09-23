@@ -48,17 +48,13 @@ function mobileSlider() {
       // If we need pagination
       spaceBetween: 20,
       slidesPerView: 1,
-      width: 400,
+      // width: 400,
       centeredSlides: true,
+      visibilityFullFit: true,
 
       pagination: {
-        el: '.swiper-pagination',
-      },
-
-      // Navigation arrows
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        el: '.sale-chairs__pagination',
+        type: 'progressbar',
       },
 
       slideClass: 'sale-card',
