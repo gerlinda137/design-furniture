@@ -1,6 +1,22 @@
+const mainSlider = document.querySelector('.slider__container');
 const commentsSlider = document.querySelector('.swiper-container');
 const saleSlider = document.querySelector('.sale-chairs');
 
+
+let mySwiper0 = new Swiper(mainSlider, {
+  wrapperClass: 'slider__wrapper',
+  slidesPerView: 1,
+  slideClass: 'slider__card',
+  direction: 'vertical',
+  spaceBetween: 40,
+  pagination: {
+    el: '.slider__pagination',
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">' + '0' + (index + 1) + '</span>';
+    },
+  },
+})
 
 let mySwiper = new Swiper(commentsSlider, {
   // Optional parameters
