@@ -14,23 +14,6 @@
   &__pagination {
     position: absolute;
     z-index: 100;
-    top: 0;
-    right: 0;
-
-    .swiper-pagination-bullet {
-      @include toggle-number-inactive;
-      opacity: 0.3;
-      // font-size: 15px;
-      // font-weight: 600;
-      // line-height: 1.7;
-      background-color: transparent;
-    }
-
-    .swiper-pagination-bullet-active {
-      @include toggle-number-active;
-      opacity: 1;
-      background-color: transparent;
-    }
   }
 
   &__wrapper {
