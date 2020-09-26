@@ -11,6 +11,10 @@
     margin: 0;
     width: 380px;
 
+    &--hidden {
+      display: none;
+    }
+
   }
 
   &__list-item-link {
@@ -49,9 +53,9 @@
       }
     }
 
-    &__list {
-      display: none;
-    }
+    // &__list {
+    //   display: none;
+    // }
   }
 
 }
