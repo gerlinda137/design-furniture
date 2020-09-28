@@ -2,7 +2,6 @@ const mainSlider = document.querySelector('.slider__container');
 const commentsSlider = document.querySelector('.swiper-container');
 const saleSlider = document.querySelector('.sale-chairs');
 
-
 let mySwiper0 = new Swiper(mainSlider, {
   wrapperClass: 'slider__wrapper',
   slidesPerView: 1,
@@ -16,7 +15,15 @@ let mySwiper0 = new Swiper(mainSlider, {
       return '<span class="' + className + '">' + '0' + (index + 1) + '</span>';
     },
   },
-})
+});
+
+function mainSliderResize() {
+  if (window.innerWidth <= 750) {
+    mySwiper0.changeDirection('horizontal');
+  } else {
+    mySwiper0.changeDirection('vertical');
+  }
+}
 
 let mySwiper = new Swiper(commentsSlider, {
   // Optional parameters
@@ -89,5 +96,8 @@ function mobileSlider() {
   }
 }
 
+
 mobileSlider();
-window.addEventListener('resize', mobileSlider)
+mainSliderResize();
+window.addEventListener('resize', mobileSlider);
+window.addEventListener('resize', mainSliderResize);

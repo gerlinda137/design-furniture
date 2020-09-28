@@ -176,6 +176,12 @@ h3.slider__product-name {
   }
 }
 
+@media (max-width: 1180px) {
+  .slider__pagination {
+    padding-right: 60px;
+  }
+}
+
 @media (max-width: 1020px) {
   .slider {
 
