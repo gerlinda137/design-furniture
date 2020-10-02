@@ -76,6 +76,7 @@
     @include buy-button;
     padding: 18px 66px;
     position: absolute;
+    bottom: -40px;
     width: 100%;
 
     &:hover {
