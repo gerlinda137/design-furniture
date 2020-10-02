@@ -25,6 +25,10 @@
       background-color: transparent;
       color: $black;
       text-align: right;
+
+      &:hover {
+        opacity: 0.5;
+      }
     }
 
     .swiper-pagination-bullet-active {
@@ -45,18 +49,12 @@
   }
 
   &__wrapper {
-    // display: flex;
-    // height: 100%;
     width: 100%;
-    // flex-direction: column;
   }
 
   &__card {
     display: flex;
     flex-shrink: 0;
-
-    // max-height: 638px;
-    // justify-content: space-between;
 
     &--hidden {
       display: none;

@@ -6,6 +6,14 @@
   &--slider {
     width: 238px;
   }
+
+  &:hover {
+    background-color: darken($black, 5%);
+  }
+
+  &:focus {
+    background-color: lighten($black, 5%);
+  }
 }
 
 @media (max-width: 750px) {

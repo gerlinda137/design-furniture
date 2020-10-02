@@ -20,6 +20,10 @@
   &__list-item-link {
     text-decoration: none;
     @include header-nav-text;
+
+    &:hover {
+      opacity: 0.5;
+    }
   }
 
   &__toggle-menu-button {
