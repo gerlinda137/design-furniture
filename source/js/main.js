@@ -1,13 +1,14 @@
 const mainSlider = document.querySelector('.slider__container');
 const commentsSlider = document.querySelector('.swiper-container');
 const saleSlider = document.querySelector('.sale-chairs');
+const pageWidthMobileThreshold = 750;
 
 let mainSwiper = null;
 let isMainSwiperMobile = false;
 
 
 function mainSliderResize() {
-  let shouldBeMobile = window.innerWidth <= 750;
+  let shouldBeMobile = window.innerWidth <= pageWidthMobileThreshold;
   if (shouldBeMobile && (mainSwiper === null || !isMainSwiperMobile)) {
     isMainSwiperMobile = true;
 
@@ -51,7 +52,7 @@ function mainSliderResize() {
   }
 }
 
-let mySwiper = new Swiper(commentsSlider, {
+let commentsSwiper = new Swiper(commentsSlider, {
   pagination: {
     el: '.swiper-pagination',
   },
@@ -66,11 +67,11 @@ let mySwiper = new Swiper(commentsSlider, {
 
 
 
-let mySwiper1;
+let saleSwiper;
 
-function mobileSlider() {
-  if (window.innerWidth <= 750 && saleSlider.dataset.mobile == 'false') {
-    mySwiper1 = new Swiper(saleSlider, {
+function checkCreateSaleMobileSwiper() {
+  if (window.innerWidth <= pageWidthMobileThreshold && saleSlider.dataset.mobile == 'false') {
+    saleSwiper = new Swiper(saleSlider, {
       // Optional parameters
       // direction: 'vertical',
 
@@ -92,18 +93,18 @@ function mobileSlider() {
     saleSlider.dataset.mobile = 'true';
   }
 
-  if (window.innerWidth > 750) {
+  if (window.innerWidth > pageWidthMobileThreshold) {
     saleSlider.dataset.mobile = 'false';
 
     if (saleSlider.classList.contains('swiper-container-initialized')) {
-      mySwiper1.destroy();
+      saleSwiper.destroy();
     }
 
   }
 }
 
 
-mobileSlider();
+checkCreateSaleMobileSwiper();
 mainSliderResize();
-window.addEventListener('resize', mobileSlider);
+window.addEventListener('resize', checkCreateSaleMobileSwiper);
 window.addEventListener('resize', mainSliderResize);
