@@ -20,9 +20,36 @@ let mySwiper0 = new Swiper(mainSlider, {
 function mainSliderResize() {
   if (window.innerWidth <= 750) {
     mySwiper0.changeDirection('horizontal');
+
+    mySwiper0.pagination.destroy();
+    //mySwiper0.pagination.el.innerHTML = '';
+
+
+    // for (let i = 0; i < mySwiper0.pagination.bullets.length; i++) {
+    //   mySwiper0.pagination.bullets[i].remove();
+    // }
+
+    mySwiper0.params.pagination.type = 'progressbar';
+    mySwiper0.params.pagination.renderBullet = undefined;
+    mySwiper0.pagination.init();
   } else {
     mySwiper0.changeDirection('vertical');
+
+    mySwiper0.pagination.destroy();
+
+    // for (let i = 0; i < mySwiper0.pagination.bullets.length; i++) {
+    //   mySwiper0.pagination.bullets[i].remove();
+    // }
+    //mySwiper0.pagination.el.innerHTML = '';
+    mySwiper0.params.pagination.type = 'bullets';
+    mySwiper0.params.pagination.renderBullet = function (index, className) {
+      return '<span class="' + className + '">' + '0' + (index + 1) + '</span>';
+    };
+    mySwiper0.pagination.init();
   }
+
+  mySwiper0.pagination.update();
+  mySwiper0.update();
 }
 
 let mySwiper = new Swiper(commentsSlider, {

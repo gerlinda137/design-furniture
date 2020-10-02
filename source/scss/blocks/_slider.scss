@@ -210,6 +210,10 @@ h3.slider__product-name {
   .slider {
     flex-direction: column;
 
+    &__wrapper {
+      display: flex;
+    }
+
     &__card {
       flex-direction: column;
       align-items: center;
@@ -219,6 +223,7 @@ h3.slider__product-name {
       order: 1;
       width: initial;
       margin-top: 60px;
+      padding-right: 30px;
     }
 
     &__card-img-container {
