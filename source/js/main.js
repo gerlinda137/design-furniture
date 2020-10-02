@@ -2,61 +2,56 @@ const mainSlider = document.querySelector('.slider__container');
 const commentsSlider = document.querySelector('.swiper-container');
 const saleSlider = document.querySelector('.sale-chairs');
 
-let mySwiper0 = new Swiper(mainSlider, {
-  wrapperClass: 'slider__wrapper',
-  slidesPerView: 1,
-  slideClass: 'slider__card',
-  direction: 'vertical',
-  spaceBetween: 40,
-  pagination: {
-    el: '.slider__pagination',
-    clickable: true,
-    renderBullet: function (index, className) {
-      return '<span class="' + className + '">' + '0' + (index + 1) + '</span>';
-    },
-  },
-});
+let mainSwiper = null;
+let isMainSwiperMobile = false;
+
 
 function mainSliderResize() {
-  if (window.innerWidth <= 750) {
-    mySwiper0.changeDirection('horizontal');
+  let shouldBeMobile = window.innerWidth <= 750;
+  if (shouldBeMobile && (mainSwiper === null || !isMainSwiperMobile)) {
+    isMainSwiperMobile = true;
 
-    mySwiper0.pagination.destroy();
-    //mySwiper0.pagination.el.innerHTML = '';
+    if (mainSwiper != null) {
+      mainSwiper.destroy();
+    }
 
-
-    // for (let i = 0; i < mySwiper0.pagination.bullets.length; i++) {
-    //   mySwiper0.pagination.bullets[i].remove();
-    // }
-
-    mySwiper0.params.pagination.type = 'progressbar';
-    mySwiper0.params.pagination.renderBullet = undefined;
-    mySwiper0.pagination.init();
-  } else {
-    mySwiper0.changeDirection('vertical');
-
-    mySwiper0.pagination.destroy();
-
-    // for (let i = 0; i < mySwiper0.pagination.bullets.length; i++) {
-    //   mySwiper0.pagination.bullets[i].remove();
-    // }
-    //mySwiper0.pagination.el.innerHTML = '';
-    mySwiper0.params.pagination.type = 'bullets';
-    mySwiper0.params.pagination.renderBullet = function (index, className) {
-      return '<span class="' + className + '">' + '0' + (index + 1) + '</span>';
-    };
-    mySwiper0.pagination.init();
+    mainSwiper = new Swiper(mainSlider, {
+      wrapperClass: 'slider__wrapper',
+      slidesPerView: 1,
+      slideClass: 'slider__card',
+      direction: 'horizontal',
+      spaceBetween: 40,
+      pagination: {
+        el: '.slider__pagination',
+        type: 'progressbar',
+      },
+    });
   }
 
-  mySwiper0.pagination.update();
-  mySwiper0.update();
+  if (!shouldBeMobile && (mainSwiper === null || isMainSwiperMobile)) {
+    isMainSwiperMobile = false;
+    if (mainSwiper != null) {
+      mainSwiper.destroy();
+    }
+
+    mainSwiper = new Swiper(mainSlider, {
+      wrapperClass: 'slider__wrapper',
+      slidesPerView: 1,
+      slideClass: 'slider__card',
+      direction: 'vertical',
+      spaceBetween: 40,
+      pagination: {
+        el: '.slider__pagination',
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + '0' + (index + 1) + '</span>';
+        },
+      },
+    });
+  }
 }
 
 let mySwiper = new Swiper(commentsSlider, {
-  // Optional parameters
-  // direction: 'vertical',
-
-  // If we need pagination
   pagination: {
     el: '.swiper-pagination',
   },
@@ -70,22 +65,6 @@ let mySwiper = new Swiper(commentsSlider, {
 })
 
 
-// let mySwiper1 = new Swiper(saleSlider, {
-//   // Optional parameters
-//   // direction: 'vertical',
-
-//   // If we need pagination
-//   pagination: {
-//     el: '.swiper-pagination',
-//   },
-
-//   // Navigation arrows
-//   navigation: {
-//     nextEl: '.swiper-button-next',
-//     prevEl: '.swiper-button-prev',
-//   },
-
-// })
 
 let mySwiper1;
 
