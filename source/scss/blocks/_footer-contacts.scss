@@ -1,7 +1,6 @@
 .footer-contacts {
-  padding-bottom: 32px;
   margin-bottom: 32px;
-  border-bottom: 1.5px solid rgba(0, 0, 0, 0.1);
+  padding-top: 30px;
 
   &__link {
 
@@ -43,5 +42,25 @@
     text-decoration: none;
     margin-right: 75px;
     position: relative;
+  }
+}
+
+@media (max-width: 750px) {
+  .footer-contacts {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+
+    &__link {
+
+      &--mail {
+        margin-left: 35px;
+      }
+
+      &--tel {
+        margin-bottom: 20px;
+      }
+    }
   }
 }

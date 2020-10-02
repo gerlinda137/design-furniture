@@ -2,6 +2,13 @@
   display: flex;
   padding-right: 4px;
 
+  &__wrapper {
+    display: flex;
+    margin-left: auto;
+    margin-top: -25px;
+  }
+
+
   &__list {
     list-style: none;
     padding: 0;
@@ -26,5 +33,28 @@
     color: $black;
     text-transform: uppercase;
     text-decoration: none;
+  }
+}
+
+
+@media (max-width: 750px) {
+  .footer-nav {
+
+    &__wrapper {
+      margin-left: 10px;
+      margin-right: auto;
+      order: 2;
+      flex-wrap: wrap;
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+
+
+
+    &__list-item {
+      margin-left: 0;
+      margin-right: 60px;
+      margin-bottom: 25px;
+    }
   }
 }

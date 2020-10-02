@@ -4,13 +4,19 @@
 
   &__container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    // justify-content: space-between;
+    // align-items: center;
     margin-bottom: 30px;
+    border-bottom: 1.5px solid rgba(0, 0, 0, 0.1);
 
     img {
       padding-left: 15px;
     }
+  }
+
+  &__logo-wrapper {
+    align-items: flex-start;
   }
 
   &__copyright {
@@ -30,6 +36,20 @@
 
     a {
       text-decoration: none;
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .main-footer {
+
+    &__logo-wrapper {
+      order: 0;
+    }
+
+    &__copyright {
+      justify-content: center;
+      ;
     }
   }
 }
